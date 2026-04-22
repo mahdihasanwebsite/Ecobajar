@@ -4,3 +4,7 @@ a {
     color: red;
     background-color: rgb(29, 27, 27);
 }
+
+@theme {
+    --color-mehedi:#00B207
+}
