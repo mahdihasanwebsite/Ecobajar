@@ -6,5 +6,6 @@ a {
 }
 
 @theme {
-    --color-mehedi:#00B207
+    --color-mehedi: #00B207;
+    --text-hf: 32px;
 }
