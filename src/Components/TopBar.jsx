@@ -3,6 +3,7 @@ import Container from './Layuots/Container'
 import { CiLocationOn } from "react-icons/ci";
 import { FaAngleDown } from "react-icons/fa";
 import useOutsideClick from '../Hooks/OutsiteClick';
+import { Link } from 'react-router';
 
 const TopBar = () => {
 
@@ -44,13 +45,13 @@ const TopBar = () => {
               Eng <FaAngleDown />
               {
                 open &&
-                <div className='fixed inset-0 flex z-50'>
-                 <div className='"w-[200px] h-full bg-white p-4"'>
-                   <ul>
-                    <li>BG</li>
-                    <li>CH</li>
-                    <li>IN</li>
-                    <li>IN</li>
+                <div className='fixed inset-0 flex z-50 '>
+                 <div className='"w-[200px]   px-[50px] h-full bg-black   p-4"'>
+                   <ul className='text-white'>
+                    <li className='pb-2.5 text-[20px] hover:text-amber-300 hover:bg-red-500 px-[30px]'>BG</li>
+                    <li className='pb-2.5 text-[20px] hover:text-amber-300  hover:bg-red-500 px-[30px]'>CH</li>
+                    <li className='pb-2.5 text-[20px] hover:text-amber-300  hover:bg-red-500 px-[30px]'>IN</li>
+                    <li className='pb-2.5 text-[20px] hover:text-amber-300  hover:bg-red-500 px-[30px]'>IN</li>
                   </ul>
                  </div>
                 </div>
@@ -73,7 +74,9 @@ const TopBar = () => {
                 </div>
               }
             </div>
-            <div className='flex items-center relative after:w-[1px] after:h-[15px] after:bg-[#E6E6E6] after:top-[2px] after:left-[-12px] after:content-[""] after:absolute' >Sin In  / Sign Up </div>
+            <div className='flex items-center relative after:w-[1px] after:h-[15px] after:bg-[#E6E6E6] after:top-[2px] after:left-[-12px] after:content-[""] after:absolute gap-3.5'>
+               <Link to="/login">Sin In</Link>   /   <Link to="/registration">Sign Up </Link>
+                </div>
           </div>
         </div>
       </Container>
